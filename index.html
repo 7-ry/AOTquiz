@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titan Quiz</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Guess who possesses the titan!</h1>
+    </header>
+
+    <main class="main-section">
+
+        <!-- Quiz pannel -->
+        <section class="quiz-panel" id="quiz-panel">
+            <div class="output-left">
+                <h2 class="score">Score : 0</h2>
+                <h2 class="highscore">High Score : 0</h2>
+            </div>
+
+            <div class="question" id="question">
+                <h1 class="countQuestion"></h1>
+                <img class="question-titan" id="question-titan" src="" alt="Image of a titan to identify" />
+                <button class="next hidden" onclick="moveNext()">Next</button>
+                <button class="playAgain hidden" onclick="playAgain()">Play Again</button>
+                <button class="exit hidden" onclick="">Exit</button>
+            </div>
+
+            <div class="output-right">
+                <h2 class="message hidden"></h2>
+            </div>
+        </section>
+
+        <!-- options -->
+        <section class="human-options">
+            <ul id="options">
+                <!-- Options'll be listed below -->
+            </ul>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
